@@ -22,8 +22,8 @@ export function Navbar() {
                 {/* Collapsible wrapper */}
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     {/* Navbar brand */}
-                    <a className="navbar-brand mt-2 mt-lg-0" href="/">
-                        El tiempo
+                    <a className="navbar-brand mt-2 mt-lg-0 nav-bar-logo app-logo" href="/">
+                        SHAQWD
                     </a>
                     {/* Left links */}
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 .App {
   text-align: center;
 }
@@ -11,6 +12,18 @@
   .App-logo {
     animation: App-logo-spin infinite 60s linear;
   }
+}
+
+.app-logo{
+  font-family: 'Gasoek One', sans-serif;
+  color: rgb(20, 187, 131);
+}
+.main-logo{
+  font-size: 70px;
+}
+
+.nav-bar-logo {
+  font-size: 25px;
 }
 
 .App-header {
@@ -35,4 +48,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.show-city-main {
+  background-color: #282c34;
+  color:rgb(20, 187, 131)
+}
+
+.ciudad {
+  font-size: 30px;
+}
+.temperatura-big {
+  font-size: 40px;
+}
+      .subtitulo-temperatura {
+  font-size: 12px;
+}
+
+body {
+  background-color: #282c34;
+
 }
