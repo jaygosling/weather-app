@@ -29,7 +29,8 @@ function Home() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
+                <div className="col-4">
+                <div className="app-logo main-logo mb-5">SHAQWD</div>
                 <select className="form-select" aria-label="Default select example" onChange={(e) => setSelectedProvince(String(e.target.value).padStart(2,"0"))}>
                     <option selected value="99">Selecciona Provincia</option>
                     {provinceList ? provinceList.provinces.map((val, i) => <option value={i}>{i != 0 ? String(i).padStart(2, "0") : ""} - {val}</option>) : ""}
@@ -39,14 +40,7 @@ function Home() {
                     {selectedProvince ? citiesList.cities.map((val) => checkZip(val)) : ""}
                 </select>
                 <Link to={'./city/' + selectedCity}><button className="btn btn-success">Buscar</button></Link>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
+                </div>
             </header>
         </div>
     )

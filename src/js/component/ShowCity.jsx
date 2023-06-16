@@ -16,7 +16,7 @@ function ShowCity() {
      * Quizás poner una función para cambiar los iconos del tiempo?
     }*/
     return (
-        <div className="container-fluid mt-3">
+        <div className="container-fluid mt-3 show-city-main">
             <div className="row text-center">
                 <h1>El tiempo en {store.weatherData[0]?.nombre}</h1>
             </div>
@@ -30,8 +30,8 @@ function ShowCity() {
                         <div className={colWidth}>18 - 24</div>
                     </div>
                     <div className="row">
-                        <div className={firstColWidth}>Precipitación</div>
-                        {store.weatherData[0]?.prediccion?.dia[0].probPrecipitacion.map((val, i) => i > 2 ? <div className={colWidth}>{val.value} l/m2</div> : "")}
+                        <div className={firstColWidth}>Probabilidad de precipitación</div>
+                        {store.weatherData[0]?.prediccion?.dia[0].probPrecipitacion.map((val, i) => i > 2 ? <div className={colWidth}>{val.value} %</div> : "")}
                     </div>
                     <div className="row">
                         <div className={firstColWidth}>Estado del cielo</div>
