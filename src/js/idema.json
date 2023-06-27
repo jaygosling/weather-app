@@ -1,0 +1,47 @@
+{
+    "valencia": [
+{"value": "8381X", "text": "Ademuz"},
+{"value": "8072Y", "text": "Barx"},
+{"value": "8270X", "text": "Bicorp"},
+{"value": "8300X", "text": "Carcaixent"},
+{"value": "8395X", "text": "Chelva"},
+{"value": "8005X", "text": "Fontanars dels Alforins"},
+{"value": "8193E", "text": "Jalance"},
+{"value": "8409X", "text": "Llíria"},
+{"value": "8058Y", "text": "Miramar"},
+{"value": "8283X", "text": "Ontinyent"},
+{"value": "8325X", "text": "Polinyà de Xúquer"},
+{"value": "8446Y", "text": "Sagunt/Sagunto"},
+{"value": "8337X", "text": "Turís"},
+{"value": "8309X", "text": "Utiel"},
+{"value": "8416Y", "text": "València, Viveros"},
+{"value": "8414A", "text": "Valencia Aeropuerto"},
+{"value": "8293X", "text": "Xàtiva"},
+{"value": "8203O", "text": "Zarra"}
+    ],
+    "castellon" : [
+        {"value": "8492X", "text": "Atzeneta del Maestrat"},
+{"value": "9563X", "text": "Castellfort"},
+{"value": "8500A", "text": "Castelló - Almassora"},
+{"value": "8520X", "text": "La Pobla de Benifassà-Fredes"},
+{"value": "8472A", "text": "Montanejos"},
+{"value": "9562X", "text": "Morella"},
+{"value": "8439X", "text": "Segorbe"},
+{"value": "8503Y", "text": "Torreblanca"},
+{"value": "8489X", "text": "Villafranca del Cid/Vilafranca"}
+    ],
+    "alicante": [
+        {"value": "8025", "text": "Alacant/Alicante"},
+{"value": "8059C", "text": "Alcoi/Alcoy"},
+{"value": "8019", "text": "Alicante-Elche Aeropuerto"},
+{"value": "8036Y", "text": "Benidorm"},
+{"value": "7247X", "text": "el Pinós/Pinoso"},
+{"value": "8018X", "text": "Elx/Elche"},
+{"value": "8050X", "text": "Jávea/ Xàbia"},
+{"value": "8013X", "text": "Novelda"},
+{"value": "7244X", "text": "Orihuela"},
+{"value": "8057C", "text": "Pego"},
+{"value": "7261X", "text": "Rojales"},
+{"value": "8008Y", "text": "Villena"}
+    ]
+}
