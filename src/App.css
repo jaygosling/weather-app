@@ -22,19 +22,51 @@
   font-size: 70px;
 }
 
+.sidebar-logo {
+  font-size: 50px;
+}
+
 .nav-bar-logo {
   font-size: 25px;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+.weather-sidebar{
+  height: 85vh;
+  position:sticky;
+  top:0;
+
+}
+
+.close-icon {
+  position: relative;
+  right: 25px;
+  top: 10px;
 }
 
 .App-link {
@@ -56,10 +88,10 @@
 }
 
 .ciudad {
-  font-size: 30px;
+  font-size: 20px;
 }
 .temperatura-big {
-  font-size: 40px;
+  font-size: 30px;
 }
       .subtitulo-temperatura {
   font-size: 12px;
