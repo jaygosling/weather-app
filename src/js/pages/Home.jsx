@@ -13,16 +13,16 @@ function Home() {
     const [selectedCity, setSelectedCity] = useState(null);
 
     useEffect(() => {
-        const citiesJson = require('../cities.json');
+        const citiesJson = require('../municipalities.json');
         const provinceJson = require('../provinces.json')
         setCitiesList(citiesJson);
         setProvinceList(provinceJson)
     }, [])
 
     function checkZip(value) {
-        let code = String(value.id_old)
+        let code = String(value.id)
         if (code.indexOf(selectedProvince) == 0) {
-            return <option value={String(value.id).slice(2)}>{value.nombre}</option>
+            return <option value={value.id}>{value.nombre}</option>
         }
     }
 
@@ -36,8 +36,8 @@ function Home() {
                     {provinceList ? provinceList.provinces.map((val, i) => <option value={i}>{i != 0 ? String(i).padStart(2, "0") : ""} - {val}</option>) : ""}
                 </select>
                 <select className="form-select my-3" aria-label="Default select example" onChange={(event) => setSelectedCity(event.target.value)}>
-                    <option selected >Selecciona Ciudad</option>
-                    {selectedProvince ? citiesList.cities.map((val) => checkZip(val)) : ""}
+                    <option selected value="0">Selecciona Ciudad</option>
+                    {selectedProvince ? citiesList.municipalities.map((val) => checkZip(val)) : ""}
                 </select>
                 <Link to={'./test/'}><button className="btn btn-success"  onClick={()=>{actions.getWeatherInfo(selectedCity)}}>Buscar</button></Link>
                 </div>

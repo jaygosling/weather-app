@@ -58,11 +58,10 @@ function WeatherCard(props) {
                         <p className="text-center m-0"><span className="temperatura-big">{props?.weather?.prediccion.dia[0].temperatura.minima}º</span><br /><span className="subtitulo-temperatura">min</span></p>
                     </div>
                     <div className="col-6">
-
                     </div>
                 </div>
             </div>
-            <i class="fas fa-circle-xmark close-icon" onClick={()=>{actions.deleteCard(props?.index)}}></i>
+            <i class="fas fa-circle-xmark close-icon" onClick={() => { actions.deleteCard(props.index) }}></i>
         </div>
     )
 }

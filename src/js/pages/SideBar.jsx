@@ -13,16 +13,16 @@ function SideBar() {
     const [selectedCity, setSelectedCity] = useState(null);
 
     useEffect(() => {
-        const citiesJson = require('../cities.json');
+        const citiesJson = require('../municipalities.json');
         const provinceJson = require('../provinces.json');
         setCitiesList(citiesJson);
         setProvinceList(provinceJson);
     }, [])
 
     function checkZip(value) {
-        let code = String(value.id_old);
+        let code = String(value.id)
         if (code.indexOf(selectedProvince) == 0) {
-            return <option value={String(value.id).slice(2)}>{value.nombre}</option>
+            return <option value={value.id}>{value.nombre}</option>
         }
     }
 
@@ -35,7 +35,7 @@ function SideBar() {
                 </select>
                 <select className="form-select my-3" aria-label="Default select example" onChange={(event) => setSelectedCity(event.target.value)}>
                     <option selected >Selecciona Ciudad</option>
-                    {selectedProvince ? citiesList.cities.map((val) => checkZip(val)) : ""}
+                    {selectedProvince ? citiesList.municipalities.map((val) => checkZip(val)) : ""}
                 </select>
                 <button className="btn btn-success" onClick={() => { actions.getWeatherInfo(selectedCity) }}>Buscar</button>
             </div>
