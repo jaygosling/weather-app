@@ -25,7 +25,7 @@ const getState = ({ getStore, getActions, setStore }) => {
             },
             deleteCard: (i) => {
                 const store = getStore();
-                setStore({weatherData: store.weatherData.splice(i-1,1)})
+                setStore({weatherData: store.weatherData.filter((v,ind)=> i != ind)})
             }
 		}
 	};
